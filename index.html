@@ -66,8 +66,8 @@
                             <div class="swiper-slide">
                               <div class="img-container three">
                                 <div class="slide-text opacity">
-                                  <a href="#0" class="project-link wildlife-project-link">ARTICALS
-                                    <div class="view-project">CLICK TO READ MY ARTICALS</div>
+                                  <a href="#0" class="project-link wildlife-project-link">ARTICLES
+                                    <div class="view-project">CLICK TO READ MY ARTICLES</div>
 
                                   </a>
                                 </div>
@@ -143,8 +143,7 @@
       <div class="about-text">
         <div class="about-text-container about-opacity">
         <div class="about-text-header">
-          Hi , I'm a 21 y/o Passionate Graphic Designer and Frontend Developer,
-          Graduated in 2023
+          Hi , I'm a Passionate Graphic Designer and Frontend Developer, and a
         </div>
         <div class="about-text-paragraph">
           Computer science graduate with expertise in Java, Python, HTML, CSS, and JavaScript. Proven track record in designing and implementing functional and visually appealing software solutions and websites. Strong problem-solving, attention to detail, and communication skills. 
@@ -154,8 +153,8 @@
         </div>
         <div class="about-text-button">
           <button class="contact-link-about contact-button hover">Contact Me</button>
-          <a href ="./Mayank_Raj_CV.pdf" download="Resume" class="contact-link-about contact-button hover">My Resume</a>
-        </div>
+          <button id="downloadButton" class="contact-link-about contact-button hover">CV</button>
+        </div>     
       </div>
       </div>
     </div>
@@ -440,9 +439,6 @@
   </div>
 
   <!--CONTACT PAGE-->
-
-
-
       </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"
@@ -575,7 +571,15 @@
       })
 
       </script>
-
-      
+      <script>
+        document.getElementById("downloadButton").addEventListener("click", function () {
+            const link = document.createElement('a');
+            link.href = 'Mayank_Raj_CV.pdf';  // Path to your PDF file
+            link.download = 'Mayank_Raj_CV.pdf';  // File name to download as
+            link.click();
+        });
+    </script>
+        
+    
     </body>
   </html>

@@ -283,8 +283,9 @@ ul{
   top:0;
   width: 100%;
   height:100%;
-  background: #041b4e;
-  opacity: .5;
+  background:url("../homebackgrounds/blue-01.jpg");
+  opacity: 1;
+  background-size: cover;
 }
 
 #breaker{
@@ -341,8 +342,9 @@ ul{
   margin: 20px;
   position: relative;
   z-index: 5;
-  color: rgb(245, 245, 245);
+  color: rgb(255, 255, 255);
   font-family: 'Outfit', sans-serif;
+  text-shadow: 0.7px 0.6px  rgb(0, 0, 0);
 }
 .about-text-header{
   font-size: 28px;
