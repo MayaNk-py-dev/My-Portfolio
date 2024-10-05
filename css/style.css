@@ -88,24 +88,24 @@ html{
 }
 
 .parallax-slider .img-container.one {
-  background:url(../5505137.jpg);
+  background:url("../homebackgrounds/Orange.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .parallax-slider .img-container.two {
-  background:url(../6227191.jpg);
+  background:url("../homebackgrounds/Pink-01.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .parallax-slider .img-container.three {
-  background:url(../3431899-01.png);
+  background:url("../homebackgrounds/Green-01.jpg");
   background-position: center;
   background-size: cover;
 }
 .parallax-slider .img-container.four {
-  background:url(../5109840.jpg);
+  background:url("../homebackgrounds/Pink2-01.jpg");
   background-position: center;
   background-size: cover;
 }
