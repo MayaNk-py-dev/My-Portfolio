@@ -258,6 +258,18 @@ ul{
   color: rgb(245, 245, 245);
   z-index: 9;
 }
+#about .social-logo {
+  width: 28px;    /* Adjust the size of the logos */
+  height: auto;   /* Maintain aspect ratio */
+  vertical-align: middle;
+}
+#about.social-logo:hover{
+  opacity: 1;
+  transform: scale(1.05);
+  background-color: #133950;
+  color: aliceblue;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.566);
+}
 #home .social-media-links ul , #about .social-media-links ul , .project .social-media-links ul{
   display: flex;
   flex-direction: row;
@@ -332,14 +344,15 @@ ul{
   transform: rotate(45deg);
 }
 .about-text{
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   height: 100vh;
   width: 100%;
-  padding:100px;
-  margin: 20px;
+  padding:80px;
+  margin: 1px;
   position: relative;
   z-index: 5;
   color: rgb(255, 255, 255);
@@ -352,7 +365,7 @@ ul{
 }
 .about-text-button{
   padding-top: 20px;
-  text-align: left;
+  text-align: center;
   margin: 10px;
 }
 .about-text-paragraph{
@@ -366,15 +379,18 @@ ul{
   background: rgb(245, 245, 245);
   outline: none;
   border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  opacity: .8;
+  border-radius: 12px;
+  font-weight: 600; 
   color:#041b4e;
   transition: all .4s ease;
+  box-shadow: 0.5px 0.5px black;
 }
 .contact-button:hover{
   opacity: 1;
   transform: scale(1.05);
+  background-color: #133950;
+  color: aliceblue;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.566);
 }
 .project{
   height: 100vh;
@@ -853,19 +869,39 @@ display: none;
   background-size: cover;
 }
 .about-text{
-  padding:50px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin: 20px;
+  padding: 0; /* Remove redundant padding values */
+  margin: clamp(10vh, 10vh, 20vh) 5vw; /* Fluid vertical and horizontal margin */
+  max-width: 1200px; /* Optional: Limit the width of the text */
 }
 .about-text-header{
-  font-size: 22px;
-  padding-bottom: 10px;
+  padding: 0; /* No need for extra padding */
+  margin: 10vh auto; 
+  margin-left: 5vw;  
+  margin-right: 5vw; 
+  max-width: 1200px; 
 }
 .about-text-paragraph{
-  padding-bottom: 10px;
-  font-size: 16px;
+  padding: 0; 
+  margin: 10vh auto; 
+  margin-left: 10vw;  
+  margin-right: 10vw; 
+  text-align: left;
+  text-align: center;
 }
+@media (max-width: 768px) {
+  .about-text {
+    margin-left: 3vw;  /* Less margin on smaller screens */
+    margin-right: 3vw; /* Less margin on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    margin-left: 2vw;  /* Even less margin on very small screens */
+    margin-right: 2vw;
+  }
+}
+
 .navigation-close-line{
   height: 16px;
   width: 2px;
@@ -988,6 +1024,7 @@ FOR EXTRA SMALL DEVICES
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 20px;
+    text-align: left;
   }
   .about-text-header{
     font-size: 14px;
