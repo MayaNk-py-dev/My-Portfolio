@@ -263,13 +263,7 @@ ul{
   height: auto;   /* Maintain aspect ratio */
   vertical-align: middle;
 }
-#about.social-logo:hover{
-  opacity: 1;
-  transform: scale(1.05);
-  background-color: #133950;
-  color: aliceblue;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.566);
-}
+
 #home .social-media-links ul , #about .social-media-links ul , .project .social-media-links ul{
   display: flex;
   flex-direction: row;
