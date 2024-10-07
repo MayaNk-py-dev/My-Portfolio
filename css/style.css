@@ -257,6 +257,7 @@ ul{
   bottom: 5%;
   color: rgb(245, 245, 245);
   z-index: 9;
+  align-items: center;
 }
 #about .social-logo {
   width: 28px;    /* Adjust the size of the logos */
